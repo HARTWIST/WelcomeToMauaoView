@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Welcome to Mauao View</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.png">
+        <script src="js/intro.js"></script>
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;0,900;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="div1">
+            <p class="txt" id="demo"></p>
+        </div>
+        <div class="centro"><button class="btnhint" onclick="login()">Start</button></div>
+        <script>
+            var i = 0;
+            var txt = "Welcome to Mauao view photografic simulator, here you can explore the beautiful area of the game Umurangi Generations Mauao view, take all the scenery in and take some bird photos while your at it. Your gonna have to use the console log and input a code to move in this simulation, everything while be displayed on the screen and to active the console just simply click on the background image. Better experience in fullscreen. Have fun!";
+            var speed = 20;
+
+            window.onload=function typeWriter() {
+                if (i < txt.length) {
+                    document.getElementById("demo").innerHTML += txt.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                }
+            }
+        </script>
+    </body>
+</html>
